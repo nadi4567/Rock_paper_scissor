@@ -1,0 +1,92 @@
+body{
+    background-color: rgb(230, 222, 222);
+}
+h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    font-family: 'Press Start 2P', cursive;
+   font-size: 2.3rem;
+}
+.start{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: rgb(56, 84, 84);
+    width: fit-content;
+    align-items: center;
+    padding: 0.5rem 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+.mainContainer{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    flex-direction: column;
+    
+}
+.threeMain{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.rpsContainer{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid  rgb(56, 84, 84);
+    cursor: pointer;
+}
+.rpsContainer img{
+    width: 40px;
+    height: 40px;
+    
+}
+#status,.level_tle{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: rgb(146, 39, 39);
+}
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
+  
+/* Hide the congrats screen initially */
+#congratsScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff5733;
+    z-index: 1000;
+    animation: flash 1s infinite alternate; /* Flashing effect */
+}
+
+/* Brightness flashing effect */
+@keyframes flash {
+    0% {
+        background: rgba(255, 255, 255, 0.6);
+    }
+    100% {
+        background: rgba(255, 255, 255, 1);
+    }
+}
+
