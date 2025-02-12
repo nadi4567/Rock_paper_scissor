@@ -35,3 +35,8 @@ OR
 2. See demo at at 
   https://nadi4567.github.io/Rock_paper_scissor/
   
+📌 Made with ❤️ by Yu Nadi Soe.
+
+
+
+  
